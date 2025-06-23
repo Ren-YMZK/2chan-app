@@ -1,3 +1,10 @@
+<?php
+
+$title = "";
+$username = $_POST["username"];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,21 +30,22 @@
           <div class="wrapper">
             <div class="nameArea">
               <span>名前:</span>
-              <p class="username">れんですよん</p>
+              <p class="username">れんです。
+              </p>
               <time>:2025/6/22</time>
             </div>
             <p class="comment">手書きのコメントです。</p>
           </div>
         </article>
       </section>
-      <form class="formWrapper">
+      <form class="formWrapper" method="POST">
         <div>
           <input type="submit" value="書き込む">
           <label>名前:</label>
-          <input type="text">
+          <input type="text" name="username">
         </div>
         <div>
-          <textarea class="commentTextArea"></textarea>
+          <textarea class="comment"></textarea>
         </div>
       </form>
     </div>
